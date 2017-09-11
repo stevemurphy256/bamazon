@@ -1,0 +1,28 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "Amazon type backend application",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevemurphy256/bamazon.git"
+  },
+  "keywords": [
+    "bamazon",
+    "sql",
+    "nodeJS"
+  ],
+  "author": "steve murphy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevemurphy256/bamazon/issues"
+  },
+  "homepage": "https://github.com/stevemurphy256/bamazon#readme",
+  "dependencies": {
+    "inquirer": "^3.2.3",
+    "mysql": "^2.14.1"
+  }
+}
