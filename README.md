@@ -1,59 +1,62 @@
-# bamazon
+# Bamazon
 
-Bamazon is a storefront modeled after Amazon. Customers are able to buy items and purchases are reflected in the store inventory.
+Created as homework for UNC Coding Bootcamp. The assignment was to create an Amazon-like store front using Node.js and MySQL.
 
 ## Getting Started
 
-In order to run this application you must have MySQL database installed. Visit [MySQL installation page](https://dev.mysql.com/downloads/mysql/5.7.html#downloads) to download and install the correct version. Once MySQL is installed you'll be able to use Sequel Pro or MySQL Workbench and create the database using the code found in bamazonSchema.sql
+- Clone repo.
+- Run command in Terminal or Gitbash 'npm install'
+- Run command depending which mode you would like to be on:
+    * Customer - 'npm run customer'
+    * Manager - 'npm run manager'
+- Run 'ctrl + c' to exit each mode
 
-### Customer Use
+### What Each JavaScript Does
 
-run `node bamazonCustomer.js in the command line`
+1. `BamazonCustomer.js`
 
-Running this application will first display all of the items available for sale. Include the ids, names, and prices of products for sale.
-The app should then prompt users with two messages.
-The first should ask them the ID of the product they would like to buy.
-The second message should ask how many units of the product they would like to buy.
-If the store has enough of the product to meet the customer's request the sale will go through. This will show the customer their order total and be reflected in the store inventory
-If inventory is not sufficient the app will log a phrase like Insufficient quantity!, and then prevent the order from going through.
+    * Prints the products in the store.
 
+    * Prompts customer which product they would like to purchase by ID number.
 
-### Installing
+    * Asks for the quantity.
 
-Required to run the application:
-* 
+      * If there is a sufficient amount of the product in stock, it will return the total for that purchase.
+      * However, if there is not enough of the product in stock, it will tell the user that there isn't enough of the product.
+      * If the purchase goes through, it updates the stock quantity to reflect the purchase.
+      * It will also update the product sales in the department table.
 
+-----------------------
 
-## Deployment
+2. `BamazonManager.js`
 
-Add additional notes about how to deploy this on a live system
+    * Starts with a menu:
+        * View Products for Sale
+        * View Low Inventory
+        * Add to Inventory
+        * Add New Product
+        * End Session
 
-## Built With
+    * If the manager selects `View Products for Sale`, it lists all of the products in the store including all of their details.
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+    * If the manager selects `View Low Inventory`, it'll list all the products with less than five items in its stock quantity column.
 
-## Contributing
+    * If the manager selects `Add to Inventory`, it allows the manager to select a product and add inventory.
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+    * If the manager selects `Add New Product`, it allows the manager to add a new product to the store.
 
-## Versioning
+    * If the manager selects `End Session`, it ends the session and doesn't go back to the menu.
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+    ## DEMO VIDEOS
+
+    ### Prerequisites
+
+```
+- Node.js - Download the latest version of Node https://nodejs.org/en/
+- Create a MYSQL database called 'Bamazon', reference schema.sql
+```
+
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* **Steve Murphy** - *JS/MySQL/Node.js* - [Steve Murphy](https://github.com/stevemurphy256)
