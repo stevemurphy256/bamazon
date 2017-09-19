@@ -49,6 +49,9 @@ Created as homework for UNC Coding Bootcamp. The assignment was to create an Ama
 
     ## DEMO VIDEOS
 
+    <!---
+        link to youtube or google drive videos. use zoom viewer (see Wes slack message)
+
     ### Prerequisites
 
 ```
