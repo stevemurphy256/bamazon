@@ -1,4 +1,5 @@
 //require mysql and inquirer
+
 var mysql = require('mysql');
 var inquirer = require('inquirer');
 //create connection to db
@@ -15,7 +16,7 @@ function start(){
 connection.query('SELECT * FROM Products', function(err, res){
   if(err) throw err;
 
-  console.log('Welcome to BAMazon')
+  console.log('Welcome to Bamazon')
   console.log('----------------------------------------------------------------------------------------------------')
 
   for(var i = 0; i<res.length;i++){
@@ -63,34 +64,35 @@ connection.query('SELECT * FROM Products', function(err, res){
         ], function(err, result){
             if(err) throw err;
             console.log("Success! Your total is $" + grandTotal.toFixed(2) + ". Thanks for your business!");
+            reprompt();
         });
 
-        connection.query("SELECT * FROM Departments", function(err, deptRes){
-          if(err) throw err;
-          var index;
-          for(var i = 0; i < deptRes.length; i++){
-            if(deptRes[i].DepartmentName === res[whatToBuy].DepartmentName){
-              index = i;
-            }
-          }
+        // connection.query("SELECT * FROM Departments", function(err, deptRes){
+        //   if(err) throw err;
+        //   var index;
+        //   for(var i = 0; i < deptRes.length; i++){
+        //     if(deptRes[i].DepartmentName === res[whatToBuy].DepartmentName){
+        //       index = i;
+        //     }
+        //   }
           
-          //updates totalSales in departments table
-          connection.query("UPDATE Departments SET ? WHERE ?", [
-          {TotalSales: deptRes[index].TotalSales + grandTotal},
-          {DepartmentName: res[whatToBuy].DepartmentName}
-          ], function(err, deptRes){
-              if(err) throw err;
-              //console.log("Updated Dept Sales.");
-          });
-        });
+        //   //updates totalSales in departments table
+        //   connection.query("UPDATE Departments SET ? WHERE ?", [
+        //   {TotalSales: deptRes[index].TotalSales + grandTotal},
+        //   {DepartmentName: res[whatToBuy].DepartmentName}
+        //   ], function(err, deptRes){
+        //       if(err) throw err;
+        //       //console.log("Updated Dept Sales.");
+        //   });
+        // });
 
       } else{
         console.log("Oops! We don't seem to have enough in stock, sorry!");
+        reprompt();
       }
-
-      reprompt();
+        
     })
-})
+  })
 }
 
 //asks if they would like to purchase another item
