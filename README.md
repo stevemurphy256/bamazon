@@ -29,11 +29,11 @@ Created as homework for UNC Coding Bootcamp. The assignment was to create an Ama
 -----------------------
 
 
-    ## DEMO VIDEO
+## DEMO VIDEO
 
-    [bamazonCustomer Demo Video](https://drive.google.com/file/d/0BxwBXHKcn51MU0ZBeFI2bTloQjg/view?usp=sharing)
+[bamazonCustomer Demo Video](https://drive.google.com/file/d/0BxwBXHKcn51MU0ZBeFI2bTloQjg/view?usp=sharing)
 
-    ### Prerequisites
+### Prerequisites
 
 ```
 - Node.js - Download the latest version of Node https://nodejs.org/en/
