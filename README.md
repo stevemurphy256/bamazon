@@ -13,7 +13,7 @@ Created as homework for UNC Coding Bootcamp. The assignment was to create an Ama
 
 ### What Each JavaScript Does
 
-1. `BamazonCustomer.js`
+1. `bamazonCustomer.js`
 
     * Prints the products in the store.
 
@@ -28,7 +28,7 @@ Created as homework for UNC Coding Bootcamp. The assignment was to create an Ama
 
 -----------------------
 
-2. `BamazonManager.js`
+2. `bamazonManager.js`
 
     * Starts with a menu:
         * View Products for Sale
@@ -62,4 +62,4 @@ Created as homework for UNC Coding Bootcamp. The assignment was to create an Ama
 
 ## Authors
 
-* **Steve Murphy** - *JS/MySQL/Node.js* - [Steve Murphy](https://github.com/stevemurphy256)
+* **Steve Murphy** - [Steve Murphy](https://github.com/stevemurphy256)
