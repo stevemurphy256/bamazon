@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS Bamazon;
 CREATE DATABASE Bamazon;
 
 USE Bamazon;
@@ -17,13 +18,13 @@ INSERT INTO Products(ProductName,DepartmentName,Price,StockQuantity)
 VALUES ("The Blues Brothers","ENTERTAINMENT",49.95,150),
     ("Goodfellas","ENTERTAINMENT",59.99,200),
     ("Veggie Burgers","GROCERY",24.50,50),
-    ("RayBans","CLOTHING",75.00,5),
-    ("Blackhawks Sweater","CLOTHING",54.25,35),
-    ("2 Man Tent","SPORTS & OUTDOORS",42.42,42),
-    ("The Matrix","ENTERTAINMENT",15.00,25),
-    ("Mad Max: Fury Road","ENTERTAINMENT",25.50,57),
-    ("Gladiator","ENTERTAINMENT",30.50,35),
-    ("American Ganster","ENTERTAINMENT",19.95,23);
+    ("RayBans","CLOTHING",75.19,5),
+    ("Blackhawks Sweater","CLOTHING",149.95,35),
+    ("2 Man Tent","SPORTS & OUTDOORS",40.26,42),
+    ("The Matrix","ENTERTAINMENT",15.99,25),
+    ("Mad Max: Fury Road","ENTERTAINMENT",29.99,57),
+    ("Gladiator","ENTERTAINMENT",30.09,35),
+    ("American Ganster","ENTERTAINMENT",39.29,23);
 
 CREATE TABLE Departments(
     DepartmentID MEDIUMINT AUTO_INCREMENT NOT NULL,

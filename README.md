@@ -49,8 +49,7 @@ Created as homework for UNC Coding Bootcamp. The assignment was to create an Ama
 
     ## DEMO VIDEOS
 
-    <!---
-        link to youtube or google drive videos. use zoom viewer (see Wes slack message)
+    [bamazonCustomer Demo Video](https://drive.google.com/file/d/0BxwBXHKcn51MU0ZBeFI2bTloQjg/view?usp=sharing)
 
     ### Prerequisites
 
